@@ -7,12 +7,9 @@ This project is used as a little demonstration of my skills and for evolving my 
 
 You can modify and use this project or certain components if you wish.
 
-For any questions feel free to contact me at me@mwardew.com <br /> 
+For any questions feel free to contact me at me@mwardew.com
 
 <br />
-
-<br />
-
 <br />
 
 
