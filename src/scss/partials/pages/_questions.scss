@@ -1,0 +1,120 @@
+/* JustAsk - Page - Questions */
+
+.question-teaser-list {
+	text-align: center;
+}
+
+.question-author-name,
+.response-author-name {
+	text-transform: uppercase;
+}
+
+.question-show-author-picture {
+	margin-top: $question-show-author-picture-margin-bottom;
+}
+
+.question-show-context,
+.response-context {
+	text-align: center;
+}
+
+.question-context {
+	margin-bottom: $question-context-margin-bottom;
+}
+
+.response-spacing {
+	margin-bottom: $response-spacing-margin-bottom;
+}
+
+.question-show-title {
+	text-align: center;
+	margin-bottom: $question-show-title-margin-bottom;
+}
+
+.response {
+	.site-controls {
+		text-align: right;
+	}
+}
+
+.response-content {
+	margin-top: $response-content-margin-top;
+	margin-bottom: $response-content-margin-bottom;
+}
+
+
+// Social Action
+// 
+// Generate social action classes -> .response-like, .response-dislike and more.
+
+@each $action, $background in $social-action-colors {
+	.response-#{ $action } {
+		background-color: $background;
+		color: color-yiq( $background );
+		-webkit-tap-highlight-color: darken( $background, 7% );
+
+		&:hover,
+		&:focus {
+			background-color: darken( $background, 7% ); 
+		}
+	}
+}
+
+.response-best-wrap {
+	margin-bottom: $response-best-wrap-margin-bottom;
+	text-align: right;
+}
+
+.response-best {
+	text-transform: uppercase;
+	display: inline-block;
+	color: $response-best-color;
+	padding: $response-best-padding-y $response-best-padding-x;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	.response-best-icon {
+		color: $response-best-icon-color;
+	}
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Medium breakpoint/tweakpoint --xs
+@mixin questions--xs() {
+	.question-show-context,
+	.response-context {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+
+	.question-author-picture,
+	.response-author-picture {
+		margin-top: 0;
+	}
+}
+
+// Medium breakpoint/tweakpoint --sm
+@mixin questions--sm() {
+	.question-show-title {
+		text-align: left;
+	}
+}
+
+// Medium breakpoint/tweakpoint --md
+@mixin questions--md() {
+	.question-teaser-list {
+		text-align: left;
+	}
+}
+
+/* END JustAsk - Page - Questions */

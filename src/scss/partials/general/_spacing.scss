@@ -1,0 +1,31 @@
+/* JustAsk - Spacing */
+
+// Margin, Padding
+// 
+// Generate margin, padding based on $spacer, $spaceamounts, $sides variables
+
+@each $space, $space-amount in $space-amounts {
+	@each $side in $sides {
+		@if ( $side == 'all' ) {
+			// Generate margin, padding for all sides
+			.m-#{ $space } {
+			  margin: $space-amount;
+			}
+
+			.p-#{ $space } {
+			  padding: $space-amount;
+			}
+		} @else {
+			// Generate margin, padding for certain side
+			.m#{ str-slice( $side, 0, 1 ) }-#{ $space } {
+			  margin-#{ $side }: #{ $space-amount } !important;
+			}
+
+			.p#{ str-slice( $side, 0, 1 ) }-#{ $space } {
+			  padding-#{ $side }: #{ $space-amount } !important;
+			}
+		}
+	}
+}
+
+/* END JustAsk - Spacing */

@@ -1,0 +1,461 @@
+/* JustAsk - Variables */
+
+// Hint:
+// 
+// --xs, --sm, --md, ... these are variables for certain media queries.
+// -sm, -lg ,... these are variables of invidual sizes -> font-size: $font-size-lg;
+
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+
+
+// Colors
+//
+// General colors.
+
+$white: #fff;
+$darkgray: #333;
+$red: #dc3545;
+$hotpink: #ff0c84;
+$blue: #2a93e2;
+$gold: #FFD700;
+
+$light: #f1f1f1;
+$dark: #333;
+
+$color-primary: $hotpink;
+$color-secondary: $light;
+$color-text: $dark;
+$color-selection: lighten( $color-primary, 40% );
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $darkgray;
+$yiq-text-light: $white;
+
+
+
+// Spacing
+// 
+// Mostly focused on spacing. Margin, padding.
+
+$spacer: 1rem;
+
+$space-amounts: (
+  0: 0, 
+  1: ( $spacer * 0.25 ), 
+  2: ( $spacer * 0.5 ),
+  3: $spacer,
+  4: ( $spacer * 1.5 ),
+  5: ( $spacer * 2 ),
+  6: ( $spacer * 2.5 ),
+  7: ( $spacer * 3 )
+); // Adjust this to include the pixel amounts you need.
+
+$sides: ( top, bottom, left, right, all ); // Leave this variable alone
+
+
+
+// Text Alignment
+// 
+// Used for generating text alignment classes
+
+$text-alignment: (
+	left,
+	right,
+	center
+);
+
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius: .25em;
+
+$transition-base: all .2s ease-in-out;
+
+$box-shadow-base: 0 .0625em .25em .0625em #e2e2e2;
+
+
+
+// Container
+//
+// Define the maximum width of `.container`.
+
+$container-max-width: 1170px;
+$container-padding-y: 0;
+$container-padding-x: 1em;
+
+
+
+
+// Flex Container
+//
+// Define the settings of `.flex-container`.
+
+$flex-container-grow: 1;
+$flex-container-shrink: 1;
+$flex-container-basis: auto;
+
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $color-secondary;
+$body-color: $dark;
+
+
+
+// Main
+//
+// Define the settings of `.main`.
+
+$main-margin-bottom: 4em;
+
+
+
+// Content Spacing
+//
+// Define the settings of `.aside-content`, `.section-content`.
+
+$content-spacing-padding-top: 2em;
+
+
+
+// Side Content
+// 
+// Define side content width, spacing, colors, text and more.
+
+// values for $site-breakpoint-sm
+$side-content-width--sm: 40%; /* flex-basis */
+$side-content-margin-right--sm: 1%;
+
+// values for $site-breakpoint-md
+$side-content-width--md: 30%; /* flex-basis */
+
+// values for $site-breakpoint-lg
+$side-content-margin-right--lg: 2%;
+
+
+
+// Main Content
+// 
+// Define main content width, spacing, colors, text and more.
+
+// values for $site-breakpoint-sm
+$main-content-width--sm: 60%; /* flex-basis */
+
+// values for $site-breakpoint-md
+$main-content-width--md: 70%; /* flex-basis */
+
+
+
+// Footer
+//
+// Define the settings of `.site-footer`.
+
+$footer-margin-top--sm: 6em;
+
+$footer-menu-padding-right: .6em;
+$footer-menu-padding-left: .6em;
+$footer-menu-separator: '/';
+
+$footer-copyright-margin-top: 2em;
+
+$footer-copyright-rights-margin-top: 1em;
+
+
+
+// Panels
+//
+// Define panel width, spacing, colors, text and more. Panel is used for .site-section, .site-aside.
+
+$panel-bg: $white;
+
+$panel-padding-y: 1.5em; 
+$panel-padding-x: 1.5em;
+
+$panel-margin-top: 2em;
+
+$panel-box-shadow: $box-shadow-base;
+
+$panel-border-radius: $border-radius;
+
+
+
+// Panels Title
+//
+// Define panels title size, spacing and more.
+
+$panel-title-margin: 0;
+
+$panel-title-font-size: 2em;
+
+
+
+// Panels Description
+//
+// Define panels description settings.
+
+$panel-description-padding-y: 1em;
+$panel-description-padding-x: 0;
+
+
+
+// Logo
+//
+// Settings, font-size, and colors for site logo.
+
+$logo-font-family: 'Poppins', sans-serif;
+$logo-font-size: 4em;
+$logo-font-size--md: 5em;
+$logo-color: $color-text;
+$logo-color-highlight: $color-primary;
+$logo-text-shadow: 0.020833333333333332em 0.020833333333333332em 0 $color-text; /* 1/48 */ /* 1/48 */ /* 0/48 */
+
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $color-primary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+
+
+// Forms
+//
+// Settings, colors, spacing for forms.
+
+$input-padding-y: .5em;
+$input-padding-x: .5em;
+
+$input-bg: $color-secondary;
+$input-color: $color-text;
+
+$input-border-radius: $border-radius;
+
+$input-border-color: darken( $color-secondary, 5% );
+$input-border-color-hover: $color-primary;
+$input-border-width: .0625em;
+
+$input-transition: $transition-base;
+
+$input-submit-margin-top: 2em;
+$input-submit-padding-y: 1em;
+$input-submit-padding-x: 1em;
+
+$input-check-margin-top: .3em;
+$input-check-margin-right: .3em;
+
+$select-indicator: url('data:image/svg+xml,%3Csvg id=%22Layer_1%22 data-name=%22Layer 1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4.95 10%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23ff0c84;%7D.cls-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrows%3C/title%3E%3Crect class=%22cls-1%22 width=%224.95%22 height=%2210%22/%3E%3Cpolygon class=%22cls-2%22 points=%221.41 4.67 2.48 3.18 3.54 4.67 1.41 4.67%22/%3E%3Cpolygon class=%22cls-2%22 points=%223.54 5.33 2.48 6.82 1.41 5.33 3.54 5.33%22/%3E%3C/svg%3E');
+
+$form-auth-max-width: 40em;
+
+$form-group-margin: 1em 0;
+
+$form-label-margin-bottom: 1em;
+
+$form-link-margin-top: 1em;
+
+
+
+// Buttons
+//
+// For each of buttons, define text, background, and border color.
+
+$btn-padding-y: $input-padding-y;
+$btn-padding-x: $input-padding-x;
+
+$btn-border-radius: $border-radius;
+
+$btn-transition: $transition-base;
+
+
+
+// Buttons Variants
+//
+// For each of variant of buttons, define text, background, and border color.
+
+$btn-variants-colors: (
+	'primary': $color-primary
+);
+
+
+
+
+// Lists
+//
+// Define colors, borders and more for lists.
+
+$list-default-border-width: .0625em;
+$list-default-border-color: $color-secondary;
+$list-default-padding-y: 2em; 
+$list-default-padding-x: 0;
+
+
+
+// Activity Report
+//
+// Define the settings, colors, spacing and more.
+
+$activity-report-item-margin-bottom: 3em;
+$activity-date-margin-bottom: 1em;
+$activity-date-margin-top: 0;
+$activity-link-margin-top: 1em;
+
+
+// FAQ
+//
+// Define the settings, colors, spacing and more.
+
+$faq-item-padding-y: .5em;
+$faq-item-padding-x: .5em;
+
+$faq-item-question-bg: $color-primary;
+$faq-item-question-margin-top: 2em;
+
+$faq-item-answer-bg: lighten( $faq-item-question-bg, 42% );
+$faq-item-answer-padding-y: 1em;
+$faq-item-answer-padding-x: 1em;
+$faq-item-answer-margin-left: 0;
+
+$faq-item-border-radius: $border-radius;
+
+
+
+// Manage Account
+//
+// Colors, settings for manage account
+
+$upload-user-picture-margin-top: 2em;
+$upload-user-picture-margin-bottom: 3em;
+
+$upload-user-picture-max-width--md: 50%;
+
+
+
+// Question, Response
+//
+// Colors, settings for question
+
+$question-context-margin-bottom: 2em;
+$question-show-title-margin-bottom: 2em;
+
+$question-show-author-picture-margin-bottom: 2em;
+
+$response-spacing-margin-bottom: 2em;
+
+$response-content-margin-top: 2em;
+$response-content-margin-bottom: 2em;
+
+// Best Response
+$response-best-wrap-margin-bottom: 1em;
+$response-best-color: #9a9a9a;
+$response-best-padding-y: 0.5em; 
+$response-best-padding-x: 0.5em;
+$response-best-icon-color: #20ce00;
+
+
+
+// User Profile & User Info
+//
+// Colors, settings for user profile
+
+$user-profile-content-margin-top: 2em;
+$user-profile-content-item-margin-bottom: 2em;
+$user-profile-content-item-name-margin-bottom: .5em;
+
+$user-profile-site-controls-margin-top: 2em;
+
+$user-profile-content-item-width--xs: 50%;
+$user-profile-content-item-width--sm: 100%;
+
+$user-profile-picture-border-radius: 50%;
+$user-profile-picture-border-width: .3125em;
+$user-profile-picture-border-color: rgba(210, 210, 210, .63);
+
+$user-profile-picture-star-position-bottom: .3em;
+
+
+$user-profile-picture-width-md: 7.5em;
+$user-profile-picture-star-position-right-md: .5em;
+
+
+$user-profile-picture-width-lg: 10em;
+$user-profile-picture-star-position-right-lg: 1.3em;
+
+
+$user-info-content-item-width--md: 50%;
+
+// Groups
+//
+// Colors, settings for groups
+
+$groups-star-colors: (
+	'admin': $gold,
+	'moderator': $blue
+);
+
+
+$groups-user-info-margin-bottom: 2em;
+$groups-user-info-margin-bottom--md: 0;
+
+$groups-user-name-margin-left--xs: 1em;
+
+$groups-star-padding-y: .25em;
+$groups-star-padding-x: .25em;
+
+$groups-star-font-size: 1.0625em;
+$groups-star-line-height: 1.125em;
+
+
+
+// Social Actions
+//
+// Define colors, settings for social actions - like, dislike and more.
+
+$social-action-colors: (
+	'like': $blue,
+	'dislike': $red
+);
+
+// 'best': $gold
+
+// Site Controls
+//
+// Define settings of site controls
+
+$site-controls-margin-bottom: 2em;
+$site-controls-margin-bottom--md: 1em;
+
+$site-controls-link-decoration: none;
+
+/* END JustAsk - Variables */

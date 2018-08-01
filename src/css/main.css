@@ -1,0 +1,1033 @@
+/* Custom SCSS Files For JustAsk
+ *
+ * This files are using SASS (SCSS) preprocessor.
+ * Files were created using Prepros
+ * Author: devxenner
+ * Website: https://devxenner.com/
+ * License: All rights reserved. Do not copy. Do not sell or distribute this file.
+ * 
+ */
+/* JustAsk - Variables */
+/* flex-basis */
+/* flex-basis */
+/* flex-basis */
+/* flex-basis */
+/* 1/48 */
+/* 1/48 */
+/* 0/48 */
+/* END JustAsk - Variables */
+/* JustAsk - Functions */
+/* END JustAsk - Functions */
+/* JustAsk - Mixins */
+/* END JustAsk - Mixins */
+/* JustAsk - General Settings */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+  background-color: #ffd8eb;
+}
+
+::selection {
+  background-color: #ffd8eb;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex sticky footer */
+  min-height: 100vh;
+  /* flex sticky footer */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* flex sticky footer */
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 1rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  /* flex sticky footer */
+  margin-bottom: 4em;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-default li {
+  border-bottom: 0.0625em solid #f1f1f1;
+  padding: 2em 0;
+}
+
+.list-default li:first-child {
+  padding-top: 0;
+}
+
+.list-default li:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heart-icon {
+  color: #ff0c84;
+}
+
+.date-time {
+  white-space: nowrap;
+}
+
+a {
+  color: #ff0c84;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.site-aside,
+.site-section {
+  background-color: #fff;
+  padding: 1.5em 1.5em;
+  margin-top: 2em;
+  -webkit-box-shadow: 0 0.0625em 0.25em 0.0625em #e2e2e2;
+  box-shadow: 0 0.0625em 0.25em 0.0625em #e2e2e2;
+  border-radius: 0.25em;
+}
+
+.aside-title,
+.section-title {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-spacing {
+  padding-top: 2em;
+}
+
+.section-description {
+  padding: 1em 0;
+}
+
+.site-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.site-controls a {
+  text-decoration: none;
+}
+
+.site-controls.site-controls-no-flex {
+  display: block;
+  margin: 0;
+}
+
+/* END JustAsk - General Settings */
+/* JustAsk - Spacing */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.pt-1 {
+  padding-top: 0.25rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
+.pl-1 {
+  padding-left: 0.25rem !important;
+}
+
+.mr-1 {
+  margin-right: 0.25rem !important;
+}
+
+.pr-1 {
+  padding-right: 0.25rem !important;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.pt-2 {
+  padding-top: 0.5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.pr-2 {
+  padding-right: 0.5rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+.ml-3 {
+  margin-left: 1rem !important;
+}
+
+.pl-3 {
+  padding-left: 1rem !important;
+}
+
+.mr-3 {
+  margin-right: 1rem !important;
+}
+
+.pr-3 {
+  padding-right: 1rem !important;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+.ml-4 {
+  margin-left: 1.5rem !important;
+}
+
+.pl-4 {
+  padding-left: 1.5rem !important;
+}
+
+.mr-4 {
+  margin-right: 1.5rem !important;
+}
+
+.pr-4 {
+  padding-right: 1.5rem !important;
+}
+
+.m-4 {
+  margin: 1.5rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 2rem !important;
+}
+
+.pt-5 {
+  padding-top: 2rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 2rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 2rem !important;
+}
+
+.ml-5 {
+  margin-left: 2rem !important;
+}
+
+.pl-5 {
+  padding-left: 2rem !important;
+}
+
+.mr-5 {
+  margin-right: 2rem !important;
+}
+
+.pr-5 {
+  padding-right: 2rem !important;
+}
+
+.m-5 {
+  margin: 2rem;
+}
+
+.p-5 {
+  padding: 2rem;
+}
+
+.mt-6 {
+  margin-top: 2.5rem !important;
+}
+
+.pt-6 {
+  padding-top: 2.5rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 2.5rem !important;
+}
+
+.pb-6 {
+  padding-bottom: 2.5rem !important;
+}
+
+.ml-6 {
+  margin-left: 2.5rem !important;
+}
+
+.pl-6 {
+  padding-left: 2.5rem !important;
+}
+
+.mr-6 {
+  margin-right: 2.5rem !important;
+}
+
+.pr-6 {
+  padding-right: 2.5rem !important;
+}
+
+.m-6 {
+  margin: 2.5rem;
+}
+
+.p-6 {
+  padding: 2.5rem;
+}
+
+.mt-7 {
+  margin-top: 3rem !important;
+}
+
+.pt-7 {
+  padding-top: 3rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 3rem !important;
+}
+
+.pb-7 {
+  padding-bottom: 3rem !important;
+}
+
+.ml-7 {
+  margin-left: 3rem !important;
+}
+
+.pl-7 {
+  padding-left: 3rem !important;
+}
+
+.mr-7 {
+  margin-right: 3rem !important;
+}
+
+.pr-7 {
+  padding-right: 3rem !important;
+}
+
+.m-7 {
+  margin: 3rem;
+}
+
+.p-7 {
+  padding: 3rem;
+}
+
+/* END JustAsk - Spacing */
+/* JustAsk - Buttons */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5em 0.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  text-decoration: none;
+}
+
+.btn-rounded {
+  border-radius: 0.25em;
+}
+
+.btn-primary {
+  background-color: #ff0c84;
+  -webkit-tap-highlight-color: #e70072;
+  color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #e70072;
+}
+
+/* END JustAsk - Buttons */
+/* JustAsk - Forms */
+.form-auth {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.form-group:not(:last-child) {
+  margin: 1em 0;
+}
+
+.form-group label, .form-group .form-link {
+  display: block;
+}
+
+.form-group label {
+  margin-bottom: 1em;
+}
+
+.form-group .form-link {
+  margin-top: 1em;
+}
+
+.form-group.form-group-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-group.form-group-terms input[type="checkbox"] {
+  margin-top: 0.3em;
+  margin-right: 0.3em;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.5em;
+  border-radius: 0.25em;
+  background-clip: padding-box;
+  outline: none;
+  border: none;
+}
+
+.form-control:not([type="submit"]) {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 0.0625em solid #e4e4e4;
+  line-height: inherit;
+}
+
+.form-control:not([type="submit"]):focus {
+  border-color: #ff0c84;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control[type="submit"] {
+  margin-top: 2em;
+  padding: 1em 1em;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg id=%22Layer_1%22 data-name=%22Layer 1%22 xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4.95 10%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23ff0c84;%7D.cls-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Earrows%3C/title%3E%3Crect class=%22cls-1%22 width=%224.95%22 height=%2210%22/%3E%3Cpolygon class=%22cls-2%22 points=%221.41 4.67 2.48 3.18 3.54 4.67 1.41 4.67%22/%3E%3Cpolygon class=%22cls-2%22 points=%223.54 5.33 2.48 6.82 1.41 5.33 3.54 5.33%22/%3E%3C/svg%3E") no-repeat 100% 50%;
+}
+
+select.form-control::-ms-expand {
+  display: none;
+}
+
+textarea.form-control {
+  resize: vertical;
+  white-space: pre-wrap;
+}
+
+/* END JustAsk - Forms */
+/* JustAsk - Logo */
+.logo {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #333;
+  text-shadow: 0.02083em 0.02083em 0 #333;
+}
+
+.logo a {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo .logo-highlight {
+  color: #ff0c84;
+}
+
+/* END JustAsk - Logo */
+/* JustAsk - Footer */
+.site-footer {
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding-right: 0.6em;
+}
+
+.menu li:not(:last-child)::after {
+  content: "/";
+  padding-left: 0.6em;
+}
+
+.copyright {
+  margin-top: 2em;
+}
+
+.copyright .logo,
+.copyright .copyright-brand {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.copyright-rights {
+  display: block;
+  margin-top: 1em;
+}
+
+/* END JustAsk - Footer */
+/* JustAsk - Page - FAQ */
+.faq-list dt, .faq-list dd {
+  padding: 0.5em 0.5em;
+  border-radius: 0.25em;
+}
+
+.faq-list dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ff0c84;
+  color: #fff;
+}
+
+.faq-list dt:not(:first-child) {
+  margin-top: 2em;
+}
+
+.faq-list dd {
+  margin-left: 0;
+  padding: 1em 1em;
+  background-color: #ffe2f0;
+}
+
+/* END JustAsk - Page - FAQ */
+/* JustAsk - Page - User Info */
+.user-profile .site-controls {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.user-profile-picture {
+  text-align: center;
+}
+
+.user-profile-picture .img-container {
+  display: inline-block;
+  position: relative;
+}
+
+.user-profile-picture .img-container img {
+  border-radius: 50%;
+  border: 0.3125em solid rgba(210, 210, 210, 0.63);
+}
+
+.user-profile-picture .img-container.is-user {
+  position: static;
+}
+
+.user-profile-picture .positioning {
+  position: absolute;
+  bottom: 0.3em;
+  padding: 0.25em 0.25em;
+  font-size: 1.0625em;
+  line-height: 1.125em;
+}
+
+.user-profile-picture .positioning.is-admin {
+  color: #FFD700;
+}
+
+.user-profile-picture .positioning.is-moderator {
+  color: #2a93e2;
+}
+
+.user-profile-picture .positioning.is-user {
+  display: none;
+}
+
+.user-profile-picture-md .img-container {
+  width: 7.5em;
+}
+
+.user-profile-picture-md .positioning {
+  right: 0.5em;
+}
+
+.user-profile-picture-lg .img-container {
+  width: 10em;
+}
+
+.user-profile-picture-lg .positioning {
+  right: 1.3em;
+}
+
+.user-profile-content {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.user-profile-content li:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.user-profile-content .user-profile-item-name {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* END JustAsk - Page - User Info */
+/* JustAsk - Page - Activity Report */
+.activity-report {
+  text-align: center;
+}
+
+.activity-report-item:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.activity-date {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.activity-link {
+  margin-top: 1em;
+  display: block;
+}
+
+/* JustAsk - Page - Activity Report */
+/* JustAsk - Page - Groups */
+.groups-user,
+.groups-user .site-controls {
+  text-align: center;
+}
+
+.groups-user-info {
+  margin-bottom: 2em;
+}
+
+.groups-user-name {
+  text-transform: uppercase;
+}
+
+/* END JustAsk - Page - Groups */
+/* JustAsk - Page - Questions */
+.question-teaser-list {
+  text-align: center;
+}
+
+.question-author-name,
+.response-author-name {
+  text-transform: uppercase;
+}
+
+.question-show-author-picture {
+  margin-top: 2em;
+}
+
+.question-show-context,
+.response-context {
+  text-align: center;
+}
+
+.question-context {
+  margin-bottom: 2em;
+}
+
+.response-spacing {
+  margin-bottom: 2em;
+}
+
+.question-show-title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.response .site-controls {
+  text-align: right;
+}
+
+.response-content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.response-like {
+  background-color: #2a93e2;
+  color: #fff;
+  -webkit-tap-highlight-color: #1c81cc;
+}
+
+.response-like:hover, .response-like:focus {
+  background-color: #1c81cc;
+}
+
+.response-dislike {
+  background-color: #dc3545;
+  color: #fff;
+  -webkit-tap-highlight-color: #ca2333;
+}
+
+.response-dislike:hover, .response-dislike:focus {
+  background-color: #ca2333;
+}
+
+.response-best-wrap {
+  margin-bottom: 1em;
+  text-align: right;
+}
+
+.response-best {
+  text-transform: uppercase;
+  display: inline-block;
+  color: #9a9a9a;
+  padding: 0.5em 0.5em;
+}
+
+.response-best:hover, .response-best:focus {
+  text-decoration: none;
+}
+
+.response-best .response-best-icon {
+  color: #20ce00;
+}
+
+/* END JustAsk - Page - Questions */
+/* JustAsk - Page - Manage Account */
+.manage-account-form .upload-user-picture {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* END JustAsk - Page - Manage Account */
+/* JustAsk  - Media Queries */
+@media (min-width: 460px) {
+  .copyright-rights {
+    display: inline;
+    margin-top: 0;
+  }
+  .groups-user .site-controls {
+    text-align: left;
+  }
+  .groups-user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .groups-user-name {
+    margin-left: 1em;
+  }
+  .question-show-context,
+  .response-context {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+  }
+  .question-author-picture,
+  .response-author-picture {
+    margin-top: 0;
+  }
+  .user-profile-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .user-profile-content li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0 .5em;
+  }
+}
+
+@media (min-width: 850px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+  .flex-container .side-content {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    margin-right: 1%;
+  }
+  .flex-container .main-content {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+  }
+  .site-footer {
+    margin-top: 6em;
+  }
+  .question-show-title {
+    text-align: left;
+  }
+  .user-profile-content li {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .flex-container .side-content {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+  }
+  .flex-container .main-content {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+  }
+  .site-controls {
+    margin-bottom: 1em;
+  }
+  .logo {
+    font-size: 5em;
+  }
+  .activity-report {
+    text-align: left;
+  }
+  .groups-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .groups-user-info {
+    margin-bottom: 0;
+  }
+  .manage-account-form .upload-user-picture {
+    max-width: 50%;
+  }
+  .question-teaser-list {
+    text-align: left;
+  }
+  .user-info-content li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .flex-container .side-content {
+    margin-right: 2%;
+  }
+}
+
+/* END JustAsk - Media Queries */
+/* END JustAsk - Imports */
+
+/*# sourceMappingURL=main.css.map */

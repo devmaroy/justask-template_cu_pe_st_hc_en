@@ -1,0 +1,182 @@
+/* JustAsk - General Settings */
+
+html {
+	@include box-sizing( border-box );
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+ }
+
+@include selection {
+	background-color: $color-selection;
+}
+
+.body {
+	display: flex; /* flex sticky footer */
+	min-height: 100vh; /* flex sticky footer */
+	flex-direction: column; /* flex sticky footer */
+
+	background-color: $body-bg;
+	color: $body-color;
+	
+	font-size: $font-size-base;
+	font-family: $font-family-sans-serif;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+.main {
+	flex: 1 0 auto; /* flex sticky footer */
+	margin-bottom: $main-margin-bottom;
+}
+
+.container {
+	@include container( $container-max-width );
+	padding: $container-padding-y $container-padding-x;
+}
+
+.img-fluid {
+  @include img-fluid;
+}
+
+.list-unstyled {
+	@include list-unstyled;
+}
+
+.list-default {
+	li {
+		border-bottom: $list-default-border-width solid $list-default-border-color;
+		padding: $list-default-padding-y $list-default-padding-x;
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			border: none;
+			padding-bottom: 0;
+		}
+	}
+}
+
+// Text alignment classes -> .text-left, etc.
+@each $align in $text-alignment {
+	.text-#{$align} {
+		text-align: $align;
+	}
+}
+
+.heart-icon {
+	color: $color-primary;
+}
+
+.date-time {
+	white-space: nowrap;
+}
+
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+
+	&:hover,
+	&:focus {
+		text-decoration: $link-hover-decoration;
+	}
+}
+
+.site-aside,
+.site-section {
+	background-color: $panel-bg;
+	padding: $panel-padding-y $panel-padding-x;
+	margin-top: $panel-margin-top;
+	box-shadow: $panel-box-shadow;
+	border-radius: $panel-border-radius;
+}
+
+.aside-title,
+.section-title {
+	margin: $panel-title-margin;
+	font-size: $panel-title-font-size;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.content-spacing {
+	padding-top: $content-spacing-padding-top;
+}
+
+.section-description {
+	padding: $panel-description-padding-y $panel-description-padding-x;
+}
+
+.site-controls {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: $site-controls-margin-bottom;
+
+	a {
+		text-decoration: $site-controls-link-decoration;
+	}
+
+	&.site-controls-no-flex {
+		display: block;
+		margin: 0;
+	}
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Small breakpoint/tweakpoint --sm
+@mixin general--sm() {
+	.flex-container {
+		display: flex;
+		flex: $flex-container-grow $flex-container-shrink $flex-container-basis;	
+
+		.side-content {
+			flex-basis: $side-content-width--sm;
+			margin-right: $side-content-margin-right--sm;
+		}
+
+		.main-content {
+			flex-basis: $main-content-width--sm;
+		}
+	}
+}
+
+// Medium breakpoint/tweakpoint --md
+@mixin general--md() {
+	.flex-container {
+		.side-content {
+			flex-basis: $side-content-width--md;
+		}
+
+		.main-content {
+			flex-basis: $main-content-width--md;
+		}
+	}
+
+	.site-controls {
+		margin-bottom: $site-controls-margin-bottom--md;
+	}
+}
+
+// Large breakpoint/tweakpoint --lg
+@mixin general--lg() {
+	.flex-container {
+		.side-content {
+			margin-right: $side-content-margin-right--lg;
+		}
+	}
+}
+
+/* END JustAsk - General Settings */

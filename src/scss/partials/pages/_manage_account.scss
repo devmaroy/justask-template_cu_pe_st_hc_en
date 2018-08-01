@@ -1,0 +1,27 @@
+/* JustAsk - Page - Manage Account */
+
+.manage-account-form {
+	.upload-user-picture {
+		margin-top: $upload-user-picture-margin-top;
+		margin-bottom: $upload-user-picture-margin-bottom;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Medium breakpoint/tweakpoint --md
+@mixin manage-account--md() {
+	.manage-account-form {
+		.upload-user-picture {
+			max-width: $upload-user-picture-max-width--md;
+		}
+	}
+}
+
+/* END JustAsk - Page - Manage Account */

@@ -1,0 +1,37 @@
+/* JustAsk - Page - Activity Report */
+
+.activity-report {
+	text-align: center;
+}
+
+.activity-report-item {
+	&:not(:last-child) {
+		margin-bottom: $activity-report-item-margin-bottom;
+	}
+}
+
+.activity-date {
+	text-transform: uppercase;
+	margin-bottom: $activity-date-margin-bottom;
+	margin-top: $activity-date-margin-top;
+}
+
+.activity-link {
+	margin-top: $activity-link-margin-top;
+	display: block;
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Medium breakpoint/tweakpoint --md
+@mixin activity-report--md() {
+	.activity-report {
+		text-align: left;
+	}
+}
+
+/* JustAsk - Page - Activity Report */

@@ -1,0 +1,72 @@
+/* JustAsk  - Media Queries */
+
+// Extra small breakpoint/tweakpoint --xs
+@media ( min-width: 460px ) {
+	// Footer - Media Queries
+	@include footer--xs();
+
+	// Groups - Media Queries
+	@include groups--xs();
+
+	// Questions - Media Queries
+	@include questions--xs();
+
+	// User Info - Media Queries
+	@include user-info--xs();
+}
+
+
+
+// Small breakpoint/tweakpoint --sm
+@media ( min-width: 850px ) {
+	// General - Media Queries
+	@include general--sm();
+
+	// Footer - Media Queries
+	@include footer--sm();
+
+	// Questions - Media Queriwes
+	@include questions--sm(); 
+
+	// User Info - Media Queries
+	@include user-info--sm();
+}
+
+
+
+// Medium breakpoint/tweakpoint --md
+@media ( min-width: 1150px ) {
+	// General - Media Queries
+	@include general--md();
+
+	// Logo - Media Queries
+	@include logo--md();
+
+	// Activity Report - Media Queries
+	@include activity-report--md();
+
+	// Groups - Media Queries
+	@include groups--md();
+
+	// Manage Account - Media Queries
+	@include manage-account--md();
+
+	// Questions - Media Queries
+	@include questions--md();
+
+	// User Info - Media Queries
+	@include user-info--md();
+}
+
+
+
+// Large breakpoint/tweakpoint --lg
+@media ( min-width: 1300px ) {
+	// General - Media Queries
+	@include general--lg();
+}
+
+
+
+
+/* END JustAsk - Media Queries */

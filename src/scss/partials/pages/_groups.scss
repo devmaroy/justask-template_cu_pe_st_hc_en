@@ -1,0 +1,53 @@
+/* JustAsk - Page - Groups */
+
+.groups-user,
+.groups-user .site-controls {
+	text-align: center;
+}
+
+.groups-user-info {
+	margin-bottom: $groups-user-info-margin-bottom;
+}
+
+.groups-user-name {
+	text-transform: uppercase;
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Extra small breakpoint/tweakpoint --xs
+@mixin groups--xs() {
+	.groups-user {
+		.site-controls {
+			text-align: left;
+		}
+	}
+
+	.groups-user-info {
+		display: flex;
+		align-items: center;
+	}
+
+	.groups-user-name {
+		margin-left: $groups-user-name-margin-left--xs;
+	}
+}
+
+// Medium breakpoint/tweakpoint --md
+@mixin groups--md() {
+	.groups-user {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.groups-user-info {
+		margin-bottom: $groups-user-info-margin-bottom--md;
+	}
+}
+
+/* END JustAsk - Page - Groups */

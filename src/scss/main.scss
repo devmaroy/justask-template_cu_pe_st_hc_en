@@ -1,0 +1,35 @@
+/* Custom SCSS Files For JustAsk
+ *
+ * This files are using SASS (SCSS) preprocessor.
+ * Files were created using Prepros
+ * Author: devxenner
+ * Website: https://devxenner.com/
+ * License: All rights reserved. Do not copy. Do not sell or distribute this file.
+ * 
+ */
+
+// Import Custom Modules
+@import 'modules/variables';
+@import 'modules/functions';
+@import 'modules/mixins';
+
+// Partials - General
+@import 'partials/general/general';
+@import 'partials/general/spacing';
+@import 'partials/general/buttons';
+@import 'partials/general/forms';
+@import 'partials/general/logo';
+@import 'partials/general/footer';
+
+// Partials - Pages
+@import 'partials/pages/faq';
+@import 'partials/pages/user_info';
+@import 'partials/pages/activity_report';
+@import 'partials/pages/groups';
+@import 'partials/pages/questions';
+@import 'partials/pages/manage_account';
+
+// Import media queries for partials
+@import 'partials/general/media_queries';
+
+/* END JustAsk - Imports */

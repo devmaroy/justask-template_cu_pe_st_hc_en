@@ -1,0 +1,77 @@
+/* JustAsk - Mixins */
+
+// Box sixing
+// 
+// Defines how the width and height of an element are calculated based on user's decision 
+
+@mixin box-sizing( $value ) {
+	box-sizing: $value;
+}
+
+
+
+// Selection
+//
+// Set the ::selection selector for allowing to pass a content block into it.
+
+@mixin selection() {
+	::selection { @content };
+}
+
+
+
+// Container
+//
+// Set the container width and center it.
+ 
+@mixin container( $width ) {
+   max-width: $width;
+   margin: 0 auto;
+}
+
+
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+
+@mixin img-fluid {
+  // Part 1: Set a maximum relative to the parent
+  max-width: 100%;
+  // Part 2: Override the height to auto, otherwise images will be stretched
+  // when setting a width and height attribute on the img element.
+  height: auto;
+  vertical-align: middle;
+}
+
+
+
+// Lists
+// 
+// Unstyled keeps list items block level, just removes default browser padding and list-style.
+
+@mixin list-unstyled {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+}
+
+
+
+// Alternate buttons
+//
+// Generate different variants of buttons.
+
+@mixin button-variant( $background ) {
+  background-color: $background;
+  -webkit-tap-highlight-color: darken( $background, 7% );
+
+  color: color-yiq( $background );
+
+  &:hover,
+  &:focus {
+    background-color: darken( $background, 7% );
+  }
+}
+
+/* END JustAsk - Mixins */

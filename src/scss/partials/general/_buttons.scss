@@ -1,0 +1,31 @@
+/* JustAsk - Buttons */
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: $btn-padding-y $btn-padding-x;
+	transition: $btn-transition;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.btn-rounded {
+	border-radius: $btn-border-radius;
+}
+
+// Alternate buttons
+//
+// Generate different button classes -> .btn-primary and more.
+
+@each $variant, $background in $btn-variants-colors {
+	.btn-#{$variant} {
+		@include button-variant( $background );
+	}
+}
+
+
+/* END JustAsk - Buttons */

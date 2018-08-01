@@ -1,0 +1,122 @@
+/* JustAsk - Page - User Info */
+
+.user-profile {
+	.site-controls {
+		justify-content: center;
+		margin-bottom: 0;
+		margin-top: $user-profile-site-controls-margin-top;
+	}
+}
+
+.user-profile-picture {
+	text-align: center;
+
+	.img-container {
+		display: inline-block;
+		position: relative;
+		
+		img {
+			border-radius: $user-profile-picture-border-radius;
+			border: $user-profile-picture-border-width solid $user-profile-picture-border-color;
+		}
+
+		&.is-user {
+			position: static;
+		}
+	}
+
+	.positioning {
+		position: absolute;
+		bottom: $user-profile-picture-star-position-bottom;
+
+		padding: $groups-star-padding-y $groups-star-padding-x;
+		font-size: $groups-star-font-size;
+		line-height: $groups-star-line-height;
+		
+		// Generate star colors
+		@each $group, $color in $groups-star-colors {
+			&.is-#{$group} {
+				color: $color;
+			}
+		}
+
+		&.is-user {
+			display: none;
+		}
+	}
+}
+
+.user-profile-picture-md {
+	.img-container {
+		width: $user-profile-picture-width-md;
+	}
+
+	.positioning {
+		right: $user-profile-picture-star-position-right-md;
+	}
+}
+
+.user-profile-picture-lg {
+	.img-container {
+		width: $user-profile-picture-width-lg;
+	}
+
+	.positioning {
+		right: $user-profile-picture-star-position-right-lg;
+	}
+}
+
+.user-profile-content {
+	text-align: center;
+	margin-top: $user-profile-content-margin-top;
+
+	li {
+		&:not(:last-child) {
+			margin-bottom: $user-profile-content-item-margin-bottom;
+		}
+	}
+
+	.user-profile-item-name {
+		display: block;
+		margin-bottom: $user-profile-content-item-name-margin-bottom;
+	}
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Extra small breakpoint/tweakpoint --xs
+@mixin user-info--xs() {
+	.user-profile-content {
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			flex-basis: $user-profile-content-item-width--xs;
+			padding: 0 .5em;
+		}
+	}
+}
+
+// Small breakpoint/tweakpoint --sm
+@mixin user-info--sm() {
+	.user-profile-content {
+		li {
+			flex-basis: $user-profile-content-item-width--sm;
+		}
+	}
+}
+
+// Medium breakpoint/tweakpoint --md
+@mixin user-info--md() {
+	.user-info-content {
+		li {
+			flex-basis: $user-info-content-item-width--md;
+		}
+	}
+}
+
+/* END JustAsk - Page - User Info */

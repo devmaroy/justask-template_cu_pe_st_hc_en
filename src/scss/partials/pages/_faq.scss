@@ -1,0 +1,30 @@
+/* JustAsk - Page - FAQ */
+
+.faq-list {
+	dt, dd {
+		padding: $faq-item-padding-y $faq-item-padding-x;
+		border-radius: $faq-item-border-radius;
+	}
+	
+	dt {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+
+		background-color: $faq-item-question-bg;
+		color: color-yiq( $faq-item-question-bg );
+
+		&:not(:first-child) {
+			margin-top: $faq-item-question-margin-top;
+		}
+	}
+
+	dd {
+		margin-left: $faq-item-answer-margin-left;
+		padding: $faq-item-answer-padding-y $faq-item-answer-padding-x;
+		background-color: $faq-item-answer-bg;
+	}
+}
+
+/* END JustAsk - Page - FAQ */

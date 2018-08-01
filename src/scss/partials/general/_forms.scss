@@ -1,0 +1,80 @@
+/* JustAsk - Forms */
+
+.form-auth {
+	max-width: $form-auth-max-width;
+	margin: 0 auto;
+}
+
+.form-group {
+	&:not(:last-child) {
+		margin: $form-group-margin;
+	}
+
+	label, .form-link {
+		display: block;
+	}
+
+	label {
+		margin-bottom: $form-label-margin-bottom;
+	}
+
+	.form-link {
+		margin-top: $form-link-margin-top;
+	}
+
+	&.form-group-terms {
+		display: flex;
+
+		input[type="checkbox"] {
+			margin-top: $input-check-margin-top;
+			margin-right: $input-check-margin-right;
+		}
+	}
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: $input-padding-y $input-padding-x;
+	border-radius: $input-border-radius;
+
+	background-clip: padding-box;
+	outline: none;
+	border: none;
+
+	&:not([type="submit"]) {
+		background-color: $input-bg;
+		color: $input-color;
+		border: $input-border-width solid $input-border-color;
+		line-height: inherit;
+
+		&:focus {
+			border-color: $input-border-color-hover;
+			transition: $input-transition;
+		}
+	}
+
+	&[type="submit"] {
+		margin-top: $input-submit-margin-top;
+		padding: $input-submit-padding-y $input-submit-padding-x;
+	}
+}
+
+select.form-control {
+	appearance: none;
+	
+	// Custom arrow icon			
+	background: $select-indicator no-repeat 100% 50%;
+
+	// For IE10
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+textarea.form-control {
+	resize: vertical;
+	white-space: pre-wrap;
+}
+
+/* END JustAsk - Forms */

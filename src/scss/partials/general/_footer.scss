@@ -1,0 +1,55 @@
+/* JustAsk - Footer */
+
+.site-footer { 
+	text-align: center;
+}
+
+.menu {
+	li {
+		display: inline-block;
+		padding-right: $footer-menu-padding-right;
+
+		&:not(:last-child)::after {
+			content: $footer-menu-separator;
+			padding-left: $footer-menu-padding-left;
+		}
+	}
+}
+
+.copyright {
+	margin-top: $footer-copyright-margin-top;
+
+	.logo, 
+	.copyright-brand {
+		font-size: $font-size-base; // downsize back to default
+		font-weight: $font-weight-bold;
+	}
+}
+
+.copyright-rights {
+	display: block;
+	margin-top: 1em;
+}
+
+
+
+// Media Queries
+// 
+// called in media-queries.scss
+
+// Extra small breakpoint/tweakpoint --xs
+@mixin footer--xs() {
+	.copyright-rights {
+		display: inline;
+		margin-top: 0;
+	}
+}
+
+// Small breakpoint/tweakpoint --sm
+@mixin footer--sm() {
+	.site-footer {
+		margin-top: $footer-margin-top--sm;
+	}
+}
+
+/* END JustAsk - Footer */
