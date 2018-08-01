@@ -22,6 +22,6 @@ Requirements
 Meta
 ============
 
-Mark Wardew alias mwardew – [@markwardew](https://twitter.com/markwardew) – me@mwardew.com
+Author:
 
-[https://github.com/mwardew/github-link](https://github.com/mwardew/)
+Mark Wardew (mwardew) – [@markwardew](https://twitter.com/markwardew) – me@mwardew.com
