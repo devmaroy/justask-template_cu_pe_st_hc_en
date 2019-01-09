@@ -1,7 +1,7 @@
 JustAsk Discussion Platform
 =======================
 
-Personal discussion platform project. Based on flexbox layout, html5 and modern css3 principes with a little bit of php.
+Personal discussion platform project. Based on flexbox layout, html5 and modern css3 principes.
 
 This project is used as a little demonstration of my skills and for evolving my knowledge as a full stack web developer.
 
