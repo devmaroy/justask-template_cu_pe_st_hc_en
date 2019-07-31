@@ -1,31 +1,58 @@
-JustAsk Discussion Platform
-=======================
-
-Personal discussion platform project. Based on flexbox layout, html5 and modern css3 principes.
-
-This project is used as a little demonstration of my skills and for evolving my knowledge as a full stack web developer.
-
-You can modify and use this project or certain components if you wish.
-
-For any questions feel free to contact me at me@mwardew.com
-
-<br />
-
-### Demo:  https://mwardew.com/projects/justask
-
-<br />
+# JustAsk Discussion Platform - Template
 
 ![](screenshot.png)
 
-Requirements
-============
+<br />
+Personal project based on HTML and CSS.
 
-* Sass >= 3.5.5 (Bleeding Edge)
+You can modify and use this project or certain components if you wish.
+
+For any questions feel free to contact me at marek@matejovic.cz
+
+<br />
+
+## 🎉 Quick Start
+
+1.  **Clone from Github.**
+
+    ```
+    git clone git@github.com:mmatejovic/justask_template.git
+    ```
+
+  <br />
 
 
-Meta
-============
+## 🤔 What's inside?
 
-Author:
+A quick look at the top-level files and directories you'll see in my Gatsby project.
 
-Mark Wardew (mwardew) – [@markwardew](https://twitter.com/markwardew) – me@mwardew.com
+    .
+    ├── favicon
+    ├── src
+    ├── .gitignore
+    ├── package-lock.json
+    ├── package.json
+    ├── screenshot.png
+    ├── yarn.lock
+    └── README.md
+
+<br />
+
+1.  **`/favicon`**: This directory contains favicon files.
+
+2.  **`/src`**: This directory contains all of the neccessary files such as scss styles and js.
+
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+4.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of npm dependencies that were installed for project. **(You won’t change this file directly).**
+
+5.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
+
+6.  **`README.md`**: A text file containing useful reference information about project.
+
+<br />
+
+## 🔗 Live Example - [https://justask-template.netlify.com/](https://justask-template.netlify.com/)
+
+<br />
+<br />
