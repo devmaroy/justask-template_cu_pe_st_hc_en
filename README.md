@@ -37,21 +37,28 @@ A quick look at the top-level files and directories you'll see in my project.
     ├── package.json
     ├── screenshot.png
     ├── yarn.lock
+    ├── multiple content files - e.q. about.html, contact.html 
     └── readme.md
 
 <br>
 
 1.  **`/favicon`**: This directory contains favicon files.
-
+  
 2.  **`/src`**: This directory contains all of the neccessary files such as scss styles and js.
-
+   
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-4.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of npm dependencies that were installed for project. **(You won’t change this file directly).**
+4. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of npm dependencies that were installed for project. **(You won’t change this file directly).**
 
-5.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
+5. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
 
-6.  **`readme.md`**: A text file containing useful reference information about project.
+6.  **`*.html`**: Multiple html files with content for each section/page.
+    
+7.  **`screenshot.png`**: Screenshot of the final website.
+  
+8.  **`.travis.yml`**: Travis CI configuration file.
+
+9. **`readme.md`**: A text file containing useful reference information about project.
 
 
 <br>
@@ -61,7 +68,7 @@ A quick look at the top-level files and directories you'll see in my project.
 <br>
 
 ###  Live example: 
-[justask-template-mmproj.netlify.app](https://justask-template-mmproj.netlify.app)
+**[justask-template-mmproj.netlify.app](https://justask-template-mmproj.netlify.app)**
 
 <br>
 
