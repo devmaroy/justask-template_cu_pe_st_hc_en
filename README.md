@@ -23,10 +23,6 @@ Use these commands to install the dependencies and start the server.
 
 <br>
 
-**Your site is now running at `http://localhost:9000`!**
-
-
-<br>
 
 
 ## Structure ##
