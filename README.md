@@ -18,7 +18,7 @@ Use these commands to install the dependencies and start the server.
 1. **Clone from Github**
 
     ```
-    $ git clone git@github.com:devmaroy/justask_template.gi
+    $ git clone git@github.com:devmaroy/justask_template.git
     ```
 
 <br>
@@ -65,7 +65,7 @@ A quick look at the top-level files and directories you'll see in my project.
 <br>
 
 ###  Live example: 
-[justask-template-mmproj.netlify.com](https://justask-template-mmproj.netlify.com)
+[justask-template-mmproj.netlify.app](https://justask-template-mmproj.netlify.app)
 
 <br>
 
