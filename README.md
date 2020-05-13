@@ -1,30 +1,37 @@
-# JustAsk Discussion Platform - Template
+# **JustAsk Template**
+
+This project is based on **Flexbox** layout, **HTML5** and modern **CSS3** principes. You can modify and use this project or certain components if you wish
+
+
+<br>
+
 
 ![](screenshot.png)
 
-<br />
-Personal project based on HTML and CSS.
 
-You can modify and use this project or certain components if you wish.
+<br>
 
-For any questions feel free to contact me at hello@devmaroy.com
+## Installation ##
 
-<br />
+Use these commands to install the dependencies and start the server.
 
-## 🎉 Quick Start
-
-1.  **Clone from Github.**
+1. **Clone from Github**
 
     ```
-    git clone git@github.com:devmaroy/justask_template.git
+    $ git clone git@github.com:devmaroy/justask_template.gi
     ```
 
-  <br />
+<br>
+
+**Your site is now running at `http://localhost:9000`!**
 
 
-## 🤔 What's inside?
+<br>
 
-A quick look at the top-level files and directories you'll see in my Gatsby project.
+
+## Structure ##
+
+A quick look at the top-level files and directories you'll see in my project.
 
     .
     ├── favicon
@@ -34,9 +41,9 @@ A quick look at the top-level files and directories you'll see in my Gatsby proj
     ├── package.json
     ├── screenshot.png
     ├── yarn.lock
-    └── README.md
+    └── readme.md
 
-<br />
+<br>
 
 1.  **`/favicon`**: This directory contains favicon files.
 
@@ -48,11 +55,20 @@ A quick look at the top-level files and directories you'll see in my Gatsby proj
 
 5.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
 
-6.  **`README.md`**: A text file containing useful reference information about project.
+6.  **`readme.md`**: A text file containing useful reference information about project.
 
-<br />
 
-## 🔗 Live Example - [https://justask-template-mmproj.netlify.app/](https://justask-template-mmproj.netlify.app/)
+<br>
 
-<br />
-<br />
+<hr>
+
+<br>
+
+###  Live example: 
+[justask-template-mmproj.netlify.com](https://justask-template-mmproj.netlify.com)
+
+<br>
+
+Created by **[@devmaroy](https://twitter.com/devmaroy)** feel free to contact me 
+
+e-mail: **[hello@devmaroy.com](hello@devmaroy.com)**
