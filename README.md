@@ -1,65 +1,58 @@
-# **JustAsk Template**
+<img src="./images/logo/logo.png" width="100">
 
-This project is based on **Flexbox** layout, **HTML5** and modern **CSS3** principes. You can modify and use this project or certain components if you wish
+# **Just Ask Template**
 
+This project is created only with HTML &amp; CSS.
 
 <br>
-
 
 ![](screenshot.png)
 
-
 <br>
 
-## Installation ##
+## Installation
 
-Use these commands to install the dependencies and start the server.
+Use these commands to clone repository.
 
 1. **Clone from Github**
 
-    ```
-    $ git clone git@github.com:devmaroy/justask_template.git
-    ```
+   ```
+   $ git clone git@github.com:devmaroy/justask-template_cu_pe_st_hc_en.git
+   ```
+
+2. **Navigate into your directory where you cloned repository**
+
+   ```
+   $ cd my-folder
+   ```
+
+**You can use live-server npm package if you want to serve this website!**
 
 <br>
 
-
-
-## Structure ##
+## Structure
 
 A quick look at the top-level files and directories you'll see in my project.
 
     .
     ├── favicon
     ├── src
-    ├── .gitignore
-    ├── package-lock.json
-    ├── package.json
     ├── screenshot.png
-    ├── yarn.lock
-    ├── multiple content files - e.q. about.html, contact.html 
-    └── readme.md
+    ├── README.md
+    └── *.html
 
 <br>
 
-1.  **`/favicon`**: This directory contains favicon files.
-  
-2.  **`/src`**: This directory contains all of the neccessary files such as scss styles and js.
-   
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+1.  **`/favicon`**: This directory contains all of the images and files necessary for favicon.
 
-4. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of npm dependencies that were installed for project. **(You won’t change this file directly).**
+2.  **`/srs`**: This directory contains all important directories - styles, images.
 
-5. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
+3.  **`screenshot.png`**: Screenshot of the final website.
 
-6.  **`*.html`**: Multiple html files with content for each section/page.
-    
-7.  **`screenshot.png`**: Screenshot of the final website.
-  
-8.  **`.travis.yml`**: Travis CI configuration file.
+4.  **`README.md`**: A text file containing useful reference information about
+    project.
 
-9. **`readme.md`**: A text file containing useful reference information about project.
-
+5.  **`.html`**: Bunch of important html pages.
 
 <br>
 
@@ -67,11 +60,12 @@ A quick look at the top-level files and directories you'll see in my project.
 
 <br>
 
-###  Live example: 
-**[justask-template-mmproj.netlify.app](https://justask-template-mmproj.netlify.app)**
+### Live example:
+
+**[justask-template.marekmatejovic.com](https://justask-template.marekmatejovic.com)**
 
 <br>
 
-Created by **[@devmaroy](https://twitter.com/devmaroy)** feel free to contact me 
+Created by **[@devmaroy](https://twitter.com/devmaroy)** feel free to contact me
 
-e-mail: **[hello@devmaroy.com](hello@devmaroy.com)**
+e-mail: **[hello@devmaroy.com](mailto:hello@devmaroy.com?subject=[GitHub]%20justask-template_cu_pe_st_hc_en)**
